@@ -1,0 +1,16 @@
+{
+  "name": "reachagent-public-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Sanitised, offline examples of bounded AI workflow design.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test --test-isolation=none dist/test/*.test.js",
+    "eval": "npm run build && node dist/src/offline-eval.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}
